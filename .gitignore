@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Data & results 
+*.csv
+*.npy
+*.npz
+
+# OS/editor junk
+.DS_Store
+.vscode/
+.idea/
+
+# Jupyter
+*.ipynb_meta
