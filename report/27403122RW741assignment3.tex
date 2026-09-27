@@ -1,0 +1,135 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{parskip}
+\usepackage{xcolor}
+
+\begin{document}
+
+\title{Active Learning in Neural Networks: A Comparison of Learning Approaches}
+
+\author{
+\IEEEauthorblockN{Aphelele M. Zenzile}
+\IEEEauthorblockA{
+Stellenbosch, South Africa \\
+27403122@sun.ac.za
+}
+}
+
+\maketitle
+
+\begin{abstract}
+    The effectiveness of active learning approaches relative to conventional passive learning remains 
+    dependent on the learning strategy and problem being considered. This study compares passive learning 
+    using stochastic gradient descent with two active learning approaches, neural network output sensitivity analysis 
+    and uncertainty sampling, under a consistent experimental framework. The three approaches were implemented and 
+    evaluated using common performance criteria across three classification and three function approximation problems 
+    of varying complexity. The experimental results were analysed to compare the performance of the learning approaches 
+    under the specified conditions. This paper therefore presents a comparative study of passive and active learning 
+    in neural networks, examining how the three approaches perform across problems with different learning characteristics 
+    and identifying the observed advantages and limitations of active learning relative to passive learning.
+\end{abstract}
+
+\begin{IEEEkeywords}
+active learning, neural networks, stochastic gradient descent,
+uncertainty sampling, sensitivity analysis
+\end{IEEEkeywords}
+
+
+\section{Introduction}
+
+The effectiveness of neural network training depends not only on the model architecture and optimisation procedure, 
+but also on how training data are selected and presented to the learning algorithm. Conventional passive learning approaches 
+expose a model to the available training data without actively considering which observations are most useful for improving the model. 
+Active learning instead seeks to make the training process more selective by identifying observations that are expected to provide 
+greater value for learning. The distinction between passive and active learning has therefore become relevant when considering 
+how neural networks can achieve effective learning while making more deliberate use of available training data.
+
+Different active learning strategies use different criteria for determining which examples should be selected. 
+A comparison is therefore required to determine how these strategies perform relative to passive learning and 
+whether the use of active selection provides measurable performance advantages across problems of different complexity.
+
+This study addresses the problem by implementing a common underlying neural network training algorithm on top of which three learning strategies 
+are incorporated: passive learning using stochastic gradient descent (SGD), active learning using neural network output sensitivity analysis, 
+and active learning using uncertainty sampling. The three strategies are evaluated through a consistent set of experiments and common 
+performance criteria, allowing their performance to be compared under the same experimental framework. The implementation used for the experiments 
+is available in this public repository: \textit{https://github.com/APZenzile/ML\_Assignment\_3}. Three classification problems and 
+three function approximation problems are used to evaluate the approaches, with the selected problems representing varying levels of complexity. 
+This provides a basis for examining whether the relative performance of the learning strategies is consistent across different learning tasks.
+
+The remainder of the report is organised as follows. Section~\ref{sec:background} presents the background concepts underlying passive and active 
+learning and the learning strategies considered in the study. Section~\ref{sec:methodology} describes the experimental methodology, including the 
+selected problems, data preprocessing, neural network architecture, regularisation, training approaches, control parameter selection, and performance 
+evaluation procedure. Section~\ref{sec:results} presents the experimental results and comparison of the three learning strategies. Section~\ref{sec:conclusion} 
+concludes the report by summarising the main findings of the comparative study and acknowledging the limitations and contraints under which the study was conducted.
+
+\section{Background}
+\label{sec:background}
+
+
+% Background content
+
+
+\section{Methodology}
+\label{sec:methodology}
+
+% Methodology content
+
+\subsection{Problem Description}
+
+% Classification and function approximation problems
+
+
+\subsection{Data Preprocessing}
+
+% Preprocessing procedures and motivation
+
+
+\subsection{Neural Network Architecture}
+
+% Network architecture, hidden units, activation and cost functions
+
+
+\subsection{Regularisation}
+
+% Weight decay and penalty coefficient selection
+
+
+\subsection{Training Approaches}
+
+% Passive learning using SGD
+% Active learning using sensitivity analysis
+% Active learning using uncertainty sampling
+
+
+\subsection{Control Parameter Selection}
+
+% Selection of algorithm control parameters
+
+
+\subsection{Performance Evaluation}
+
+% Performance criteria and empirical statistical comparison
+
+
+\section{Results}
+\label{sec:results}
+
+
+% Experimental results
+
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+
+% Conclusion
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
