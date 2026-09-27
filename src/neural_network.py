@@ -14,7 +14,7 @@ import numpy as np
 from sklearn.neural_network import MLPClassifier, MLPRegressor
 
 
-def build_model(task, hidden_units, alpha=1e-4, learning_rate_init=0.01,
+def build_model(task, hidden_units, alpha=0.0001, learning_rate_init=0.01,
                  activation='relu', random_state=None, max_iter_per_round=200):
     """
     Constructs a single-hidden-layer NN (Neural Network) trained via SGD.
